@@ -24,7 +24,7 @@ export default function About() {
               <Image
                 alt="About Fatema"
                 className="object-contain"
-                src="/portImage/portLogo.png"
+                src="/myImage.png"
                 fill
               />
             </div>
