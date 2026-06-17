@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Hide native cursor on pointer devices (desktop). Touch devices keep default. */
+  @media (pointer: fine) {
+    *, *::before, *::after {
+      cursor: none !important;
+    }
+  }
+}
+
+.text-accent {
+  color: #F4AE52;
+}
+
+.bg-accent {
+  background-color: #F4AE52;
+}
+
+.border-accent {
+  border-color: #F4AE52;
+}
+
+.hover-bg-accent:hover {
+  background-color: #e09a3a;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: #F4AE52;
+}
+
+
